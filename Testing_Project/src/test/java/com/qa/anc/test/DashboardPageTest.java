@@ -12,8 +12,6 @@ public class DashboardPageTest extends BaseTest {
 	
 	public void DashboardPageSetup() throws InterruptedException {
 		dashboardPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-		
-		Thread.sleep(5000);
 	
 	}
 	
