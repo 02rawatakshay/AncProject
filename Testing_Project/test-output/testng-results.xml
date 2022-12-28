@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-27T10:54:15Z" name="Default suite" finished-at="2022-12-27T10:54:20Z" duration-ms="4614">
+  <suite started-at="2022-12-28T17:16:28Z" name="ANC Project Test automation sanity suite" finished-at="2022-12-28T17:16:47Z" duration-ms="18163">
     <groups>
     </groups>
-    <test started-at="2022-12-27T10:54:15Z" name="Default test" finished-at="2022-12-27T10:54:20Z" duration-ms="4614">
+    <test started-at="2022-12-28T17:16:28Z" name="Login page Test" finished-at="2022-12-28T17:16:47Z" duration-ms="18163">
       <class name="com.qa.anc.test.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:15Z" name="setUp" finished-at="2022-12-27T10:54:19Z" duration-ms="3947" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:28Z" name="setUp" finished-at="2022-12-28T17:16:39Z" duration-ms="10063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="StayloginTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:19Z" name="StayloginTest" finished-at="2022-12-27T10:54:19Z" duration-ms="92" status="PASS">
+        <test-method signature="StayloginTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:39Z" name="StayloginTest" finished-at="2022-12-28T17:16:40Z" duration-ms="1457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StayloginTest -->
-        <test-method signature="forgotPwdLinkTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:19Z" name="forgotPwdLinkTest" finished-at="2022-12-27T10:54:20Z" duration-ms="33" status="PASS">
+        <test-method signature="forgotPwdLinkTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:40Z" name="forgotPwdLinkTest" finished-at="2022-12-28T17:16:41Z" duration-ms="917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkTest -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:20Z" name="loginPageTitleTest" finished-at="2022-12-27T10:54:20Z" duration-ms="6" status="FAIL">
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:41Z" name="loginPageTitleTest" finished-at="2022-12-28T17:16:41Z" duration-ms="18" status="FAIL">
           <exception class="java.lang.StackOverflowError">
             <full-stacktrace>
               <![CDATA[java.lang.StackOverflowError
@@ -1053,15 +1053,15 @@ at com.qa.anc.page.LoginPage.getLoginPageTitle(LoginPage.java:30)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:20Z" name="loginTest" finished-at="2022-12-27T10:54:20Z" duration-ms="303" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:42Z" name="loginTest" finished-at="2022-12-28T17:16:45Z" duration-ms="3499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.anc.test.LoginPageTest@b70da4c]" started-at="2022-12-27T10:54:20Z" name="tearDown" finished-at="2022-12-27T10:54:20Z" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.anc.test.LoginPageTest@2f62ea70]" started-at="2022-12-28T17:16:45Z" name="tearDown" finished-at="2022-12-28T17:16:47Z" duration-ms="1357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.anc.test.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login page Test -->
+  </suite> <!-- ANC Project Test automation sanity suite -->
 </testng-results>

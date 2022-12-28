@@ -1,15 +1,21 @@
 package com.qa.anc.DriverFactory;
 
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-	import org.openqa.selenium.WebDriver;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.firefox.FirefoxDriver;
-	import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.safari.SafariDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 	/**
 	 * 
@@ -20,6 +26,8 @@ import java.util.Properties;
 		WebDriver driver;
 		Properties prop;
 		public static String highlight;
+		
+		public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 		/**
 		 * This method is used to initialize the webdriver on the basis of given browser
@@ -37,24 +45,28 @@ import java.util.Properties;
 			if (browserName.equals("chrome")) {
            	WebDriverManager.chromedriver().setup();
 				 System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
-				       driver = new ChromeDriver();
+				       tlDriver.set(new ChromeDriver()); 
 	
 				} else if(browserName.equals("firefox")) {
 		           	WebDriverManager.chromedriver().setup();
-					       driver = new FirefoxDriver();		
+		            tlDriver.set(new FirefoxDriver());	
 			}
 
 			else if (browserName.equals("safari")) {
-	                  driver = new ChromeDriver();
+				tlDriver.set(new SafariDriver());
 
 			}
 			else {
 				System.out.println("Please pass the correct browser name : " + browserName);
 			}
-          driver.manage().window().fullscreen();
-          driver.manage().deleteAllCookies();
+			getDriver().manage().window().fullscreen();
+			getDriver().manage().deleteAllCookies();
           
-          return driver;
+          return getDriver();
+		}
+		
+		public static synchronized WebDriver getDriver() {
+			return tlDriver.get();
 		}
 		
 	public Properties init_prop() {
@@ -69,6 +81,23 @@ import java.util.Properties;
 			e.printStackTrace();
 		}
 		return prop;
+	}
+	
+	/**
+	 * take screenshot
+	 * @return 
+	 */
+	public String getScreenshot() {
+		File src = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir")+"/screenshots/"+System.currentTimeMillis()+".png";
+		File destination = new File(path);
+		try {
+			FileUtils.copyFile(src, destination);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return path;
 	}
 	
 	}

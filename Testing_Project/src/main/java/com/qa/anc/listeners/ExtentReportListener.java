@@ -103,11 +103,6 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
-	private String getScreenshot() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		try {
