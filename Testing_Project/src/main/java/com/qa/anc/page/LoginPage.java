@@ -48,5 +48,13 @@ import com.qa.anc.utils.ElementUtils;
 			return new DashboardPage(driver);
 		
 	}
+		public RegisteredPW_Viewdeatils DoLogin(String un , String pwd) {
+			System.out.println("Login with : " + un + " " + pwd);
+			elementUtils.doSendKeys(username, un);
+			elementUtils.doSendKeys(password, pwd);
+			elementUtils.doClick(staylogin);
+			elementUtils.doClick(loginButton);
+			
+			return new RegisteredPW_Viewdeatils(driver);
 
-}
+}}

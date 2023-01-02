@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-ANC_Project_Test_automation_sanity_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-ANC_Project_Test_automation_sanity_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.RegisteredPW_ViewdetailsTest" class="method navigator-link" hash-for-method="DownloadButtonTest">DownloadButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.RegisteredPW_ViewdetailsTest" class="method navigator-link" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-ANC_Project_Test_automation_sanity_suite -->
@@ -122,6 +132,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.LoginPageTest" class="method navigator-link" hash-for-method="forgotPwdLinkTest">forgotPwdLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.RegisteredPW_ViewdetailsTest" class="method navigator-link" hash-for-method="getBackButtonTest">getBackButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.RegisteredPW_ViewdetailsTest" class="method navigator-link" hash-for-method="getHeaderValueTest">getHeaderValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ANC_Project_Test_automation_sanity_suite" title="com.qa.anc.test.RegisteredPW_ViewdetailsTest" class="method navigator-link" hash-for-method="getRegisteredPWPageTest">getRegisteredPWPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -1183,6 +1208,102 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-ANC_Project_Test_automation_sanity_suite-class-failed -->
+          <div class="suite-ANC_Project_Test_automation_sanity_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.anc.test.RegisteredPW_ViewdetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownloadButtonTest">
+                  </a> <!-- DownloadButtonTest -->
+                  <span class="method-name">DownloadButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-DOIJIN9&apos;, ip: &apos;192.168.3.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TSPL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 98f213da2641fe5668f32a5eb916bba0
+*** Element info: {Using=css selector, value=button.btn.download-btn&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.qa.anc.utils.ElementUtils.getElement(ElementUtils.java:33)
+	at com.qa.anc.utils.ElementUtils.doIsDisplayed(ElementUtils.java:71)
+	at com.qa.anc.page.RegisteredPW_Viewdeatils.getDownloadButton(RegisteredPW_Viewdeatils.java:47)
+	at com.qa.anc.test.RegisteredPW_ViewdetailsTest.DownloadButtonTest(RegisteredPW_ViewdetailsTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [searchTest] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ANC_Project_Test_automation_sanity_suite-class-failed -->
           <div class="suite-ANC_Project_Test_automation_sanity_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -1212,6 +1333,35 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-ANC_Project_Test_automation_sanity_suite-class-passed -->
+          <div class="suite-ANC_Project_Test_automation_sanity_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.anc.test.RegisteredPW_ViewdetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBackButtonTest">
+                  </a> <!-- getBackButtonTest -->
+                  <span class="method-name">getBackButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getHeaderValueTest">
+                  </a> <!-- getHeaderValueTest -->
+                  <span class="method-name">getHeaderValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRegisteredPWPageTest">
+                  </a> <!-- getRegisteredPWPageTest -->
+                  <span class="method-name">getRegisteredPWPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ANC_Project_Test_automation_sanity_suite-class-passed -->
         </div> <!-- panel ANC_Project_Test_automation_sanity_suite -->
         <div panel-name="test-xml-ANC_Project_Test_automation_sanity_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -1221,15 +1371,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ANC Project Test automation sanity suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ANC Project Test automation sanity suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.anc.listeners.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Login page Test&quot; verbose=&quot;3&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Login page Test&quot; verbose=&quot;3&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.anc.test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login page Test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;RegisteredPW_ViewdetailsTest&quot; verbose=&quot;3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.anc.test.RegisteredPW_ViewdetailsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegisteredPW_ViewdetailsTest --&gt;
 &lt;/suite&gt; &lt;!-- ANC Project Test automation sanity suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1242,6 +1397,9 @@
             <ul>
               <li>
                 <span class="test-name">Login page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegisteredPW_ViewdetailsTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1267,28 +1425,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.qa.anc.test.LoginPageTest')
-data.setCell(0, 3, 3499);
+data.setCell(0, 3, 2708);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'StayloginTest')
-data.setCell(1, 2, 'com.qa.anc.test.LoginPageTest')
-data.setCell(1, 3, 1457);
+data.setCell(1, 1, 'getHeaderValueTest')
+data.setCell(1, 2, 'com.qa.anc.test.RegisteredPW_ViewdetailsTest')
+data.setCell(1, 3, 1468);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'forgotPwdLinkTest')
-data.setCell(2, 2, 'com.qa.anc.test.LoginPageTest')
-data.setCell(2, 3, 917);
+data.setCell(2, 1, 'getRegisteredPWPageTest')
+data.setCell(2, 2, 'com.qa.anc.test.RegisteredPW_ViewdetailsTest')
+data.setCell(2, 3, 828);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginPageTitleTest')
+data.setCell(3, 1, 'StayloginTest')
 data.setCell(3, 2, 'com.qa.anc.test.LoginPageTest')
-data.setCell(3, 3, 18);
+data.setCell(3, 3, 746);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getBackButtonTest')
+data.setCell(4, 2, 'com.qa.anc.test.RegisteredPW_ViewdetailsTest')
+data.setCell(4, 3, 673);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgotPwdLinkTest')
+data.setCell(5, 2, 'com.qa.anc.test.LoginPageTest')
+data.setCell(5, 3, 598);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DownloadButtonTest')
+data.setCell(6, 2, 'com.qa.anc.test.RegisteredPW_ViewdetailsTest')
+data.setCell(6, 3, 23);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginPageTitleTest')
+data.setCell(7, 2, 'com.qa.anc.test.LoginPageTest')
+data.setCell(7, 3, 9);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchTest')
+data.setCell(8, 2, 'com.qa.anc.test.RegisteredPW_ViewdetailsTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['ANC_Project_Test_automation_sanity_suite']= { tableData: data, tableDiv: 'times-div-ANC_Project_Test_automation_sanity_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-ANC_Project_Test_automation_sanity_suite">
               </div> <!-- times-div-ANC_Project_Test_automation_sanity_suite -->
             </div> <!-- times-div -->
@@ -1314,32 +1492,74 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.anc.test.RegisteredPW_ViewdetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.qa.anc.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.anc.test.RegisteredPW_ViewdetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">RegisteredPW_ViewdetailsPageSetup</span>
+                <span class="method-start">5702 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.anc.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">StayloginTest</span>
-                <span class="method-start">10127 ms</span>
+                <span class="method-start">5775 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">forgotPwdLinkTest</span>
-                <span class="method-start">11788 ms</span>
+                <span class="method-start">6588 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">12712 ms</span>
+                <span class="method-start">7191 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">13285 ms</span>
+                <span class="method-start">7458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16793 ms</span>
+                <span class="method-start">10170 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.anc.test.RegisteredPW_ViewdetailsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRegisteredPWPageTest</span>
+                <span class="method-start">10342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getHeaderValueTest</span>
+                <span class="method-start">11340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DownloadButtonTest</span>
+                <span class="method-start">12811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getBackButtonTest</span>
+                <span class="method-start">12974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13650 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

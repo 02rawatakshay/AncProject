@@ -26,7 +26,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		WebDriver driver;
 		Properties prop;
 		public static String highlight;
-		
 		public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 		/**

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import com.qa.anc.DriverFactory.DriverFactory;
 import com.qa.anc.page.DashboardPage;
 import com.qa.anc.page.LoginPage;
+import com.qa.anc.page.RegisteredPW_Viewdeatils;
 
 public class BaseTest {
 	
@@ -17,6 +18,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public LoginPage loginPage;
 	public DashboardPage dashboardPage;
+	public RegisteredPW_Viewdeatils registeredPW_Viewdeatils;
 	
 	@BeforeTest
 	public void setUp() {

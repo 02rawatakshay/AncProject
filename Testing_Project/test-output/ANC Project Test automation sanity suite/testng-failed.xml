@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [ANC Project Test automation sanity suite]" guice-stage="DEVELOPMENT" verbose="3">
+<suite thread-count="3" parallel="tests" name="Failed suite [ANC Project Test automation sanity suite]" guice-stage="DEVELOPMENT" verbose="3">
   <listeners>
     <listener class-name="com.qa.anc.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Login page Test(failed)" verbose="3">
+  <test thread-count="3" parallel="tests" name="Login page Test(failed)" verbose="3">
     <classes>
       <class name="com.qa.anc.test.LoginPageTest">
         <methods>
@@ -15,4 +15,17 @@
       </class> <!-- com.qa.anc.test.LoginPageTest -->
     </classes>
   </test> <!-- Login page Test(failed) -->
+  <test thread-count="3" parallel="tests" name="RegisteredPW_ViewdetailsTest(failed)" verbose="3">
+    <classes>
+      <class name="com.qa.anc.test.RegisteredPW_ViewdetailsTest">
+        <methods>
+          <include name="RegisteredPW_ViewdetailsPageSetup"/>
+          <include name="searchTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="DownloadButtonTest"/>
+        </methods>
+      </class> <!-- com.qa.anc.test.RegisteredPW_ViewdetailsTest -->
+    </classes>
+  </test> <!-- RegisteredPW_ViewdetailsTest(failed) -->
 </suite> <!-- Failed suite [ANC Project Test automation sanity suite] -->

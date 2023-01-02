@@ -3,7 +3,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name = "ANC Project Test automation sanity suite"
-       thread-count = "2" parallel = "tests" verbose="3">
+       thread-count = "3" parallel = "tests" verbose="3">
        
        <listeners>
        
@@ -13,6 +13,17 @@
        <test name = "Login page Test">
        <classes>
        <class name = "com.qa.anc.test.LoginPageTest" />
+       </classes>
+       </test>
+       
+        <listeners>
+       
+       <listener class-name = "com.qa.anc.listeners.ExtentReportListener"/>
+       </listeners>
+  
+       <test name = "RegisteredPW_ViewdetailsTest">
+       <classes>
+       <class name = "com.qa.anc.test.RegisteredPW_ViewdetailsTest" />
        </classes>
        </test>
      </suite>

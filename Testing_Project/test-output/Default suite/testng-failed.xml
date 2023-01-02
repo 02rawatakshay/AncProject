@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.anc.test.LoginPageTest">
+      <class name="com.qa.anc.test.RegisteredPW_ViewdetailsTest">
         <methods>
-          <include name="loginPageTitleTest"/>
+          <include name="RegisteredPW_ViewdetailsPageSetup"/>
+          <include name="getBackButtonTest"/>
+          <include name="searchTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="DownloadButtonTest"/>
         </methods>
-      </class> <!-- com.qa.anc.test.LoginPageTest -->
+      </class> <!-- com.qa.anc.test.RegisteredPW_ViewdetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
