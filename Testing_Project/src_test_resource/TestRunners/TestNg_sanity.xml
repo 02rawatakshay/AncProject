@@ -3,10 +3,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name = "ANC Project Test automation sanity suite"
-       thread-count = "3" parallel = "tests" verbose="3">
-       
-       <listeners>
-       
+       thread-count = "3" parallel = "tests" verbose="3">   
+       <listeners>    
        <listener class-name = "com.qa.anc.listeners.ExtentReportListener"/>
        </listeners>
   
@@ -14,10 +12,8 @@
        <classes>
        <class name = "com.qa.anc.test.LoginPageTest" />
        </classes>
-       </test>
-       
-        <listeners>
-       
+       </test>       
+        <listeners>     
        <listener class-name = "com.qa.anc.listeners.ExtentReportListener"/>
        </listeners>
   

@@ -13,20 +13,21 @@ public class RegisteredPW_Viewdeatils{
 	private WebDriver driver;
 	private ElementUtils elementUtils;
 	//1. By Locator / OR
-	private By RegisteredPWPage = By.xpath("(//a[@type = 'submit'])[1]");
-	private By header = By.cssSelector("p.heading");
-	private By searchText =  By.xpath("//input[@placeholder='Search by Name']");
-	private By searchButton =  By.cssSelector("img.searchIcon.cursorStyle']");
-	private By DownloadButton =  By.cssSelector("button.btn.download-btn']");
+	private By RegisteredPWPage = By.xpath("(//a[@class='common-detail'])[1]");
+	private By header = By.xpath("//p[@class='heading']");
+	private By searchText =  By.xpath("//input[@placeholder='Search']");
+	private By searchButton =  By.xpath("//img[@class='searchIcon cursorStyle']");
+	private By DownloadButton =  By.xpath("//button[@class='btn download-btn']");
 	private By BackButton =  By.xpath("//button[@class='backButton']");
-	private By searchItemResult = By.cssSelector("button.view-btn.ng-star-inserted");
+	private By searchItemResult = By.xpath("(//tr[@class='mat-row cdk-row ng-star-inserted']"
+			+ "//button[@class='view-btn ng-star-inserted'])[1]");
 	
 	public RegisteredPW_Viewdeatils(WebDriver driver) {
 		this.driver = driver;
 		elementUtils = new ElementUtils(this.driver);
 	}
 	public boolean getRegisteredPWPage() {
-		 elementUtils.doActionsClick(RegisteredPWPage);
+		 elementUtils.doClick(RegisteredPWPage);
 		return true ;
 	}
 	public String getHeaderValue() {
@@ -35,13 +36,11 @@ public class RegisteredPW_Viewdeatils{
 		}
 		return null;
 	}
-	public boolean doSearch(String PWName) {
-		elementUtils.doSendKeys(searchText, PWName);
+	public boolean getdoSearch(String Ritu) {
+		elementUtils.doSendKeys(searchText, Ritu);
 		elementUtils.doClick(searchButton);
-		if(elementUtils.getElements(searchItemResult).size() > 0) {
-			return true;
-		}
-		return false;
+		elementUtils.doClick(searchItemResult);
+			return true;	
 	}
 	public boolean getDownloadButton() {
 		return elementUtils.doIsDisplayed(DownloadButton);

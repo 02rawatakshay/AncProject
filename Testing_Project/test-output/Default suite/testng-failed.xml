@@ -6,11 +6,9 @@
       <class name="com.qa.anc.test.RegisteredPW_ViewdetailsTest">
         <methods>
           <include name="RegisteredPW_ViewdetailsPageSetup"/>
-          <include name="getBackButtonTest"/>
-          <include name="searchTest"/>
+          <include name="PWInfoPageTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="DownloadButtonTest"/>
         </methods>
       </class> <!-- com.qa.anc.test.RegisteredPW_ViewdetailsTest -->
     </classes>

@@ -8,6 +8,7 @@
     <classes>
       <class name="com.qa.anc.test.LoginPageTest">
         <methods>
+          <include name="forgotPwdLinkTest"/>
           <include name="loginPageTitleTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
@@ -20,7 +21,9 @@
       <class name="com.qa.anc.test.RegisteredPW_ViewdetailsTest">
         <methods>
           <include name="RegisteredPW_ViewdetailsPageSetup"/>
-          <include name="searchTest"/>
+          <include name="PWInfoPageTest"/>
+          <include name="getHeaderValueTest"/>
+          <include name="getBackButtonTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="DownloadButtonTest"/>
