@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 05 22:41:20 IST 2023</td>
+<td>Started on:</td><td>Mon Jan 09 15:06:19 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44925 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18314 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.PWInfoPageTest()'><b>PWInfoPageTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.getRegisteredPWPageTest()'><b>getRegisteredPWPageTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (269, -171)
   (Session info: chrome=108.0.5359.125)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-DOIJIN9&apos;, ip: &apos;192.168.244.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;DESKTOP-DOIJIN9&apos;, ip: &apos;192.168.2.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TSPL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TSPL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f36820aed12627d14ab6a5ced9fe27c7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,8 +97,8 @@ Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.qa.anc.utils.ElementUtils.doClick(ElementUtils.java:51)
-	at com.qa.anc.page.RegisteredPW_Viewdeatils.getdoSearch(RegisteredPW_Viewdeatils.java:41)
-	at com.qa.anc.test.RegisteredPW_ViewdetailsTest.PWInfoPageTest(RegisteredPW_ViewdetailsTest.java:23)
+	at com.qa.anc.page.RegisteredPW_Viewdeatils.getRegisteredPWPage(RegisteredPW_Viewdeatils.java:30)
+	at com.qa.anc.test.RegisteredPW_ViewdetailsTest.getRegisteredPWPageTest(RegisteredPW_ViewdetailsTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,14 +124,14 @@ Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1420770489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1420770489'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+</pre></div><a href='#' onClick='toggleBox("stack-trace480645280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace480645280'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (269, -171)
   (Session info: chrome=108.0.5359.125)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-DOIJIN9&apos;, ip: &apos;192.168.244.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;DESKTOP-DOIJIN9&apos;, ip: &apos;192.168.2.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TSPL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TSPL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f36820aed12627d14ab6a5ced9fe27c7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -146,8 +146,8 @@ Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.qa.anc.utils.ElementUtils.doClick(ElementUtils.java:51)
-	at com.qa.anc.page.RegisteredPW_Viewdeatils.getdoSearch(RegisteredPW_Viewdeatils.java:41)
-	at com.qa.anc.test.RegisteredPW_ViewdetailsTest.PWInfoPageTest(RegisteredPW_ViewdetailsTest.java:23)
+	at com.qa.anc.page.RegisteredPW_Viewdeatils.getRegisteredPWPage(RegisteredPW_Viewdeatils.java:30)
+	at com.qa.anc.test.RegisteredPW_ViewdetailsTest.getRegisteredPWPageTest(RegisteredPW_ViewdetailsTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,36 +174,8 @@ Session ID: bab90b0c377f5072d1e5c64c4f70bfa4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@435fb7b5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.DownloadButtonTest()'><b>DownloadButtonTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@435fb7b5</td></tr>
-<tr>
-<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.getBackButtonTest()'><b>getBackButtonTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@435fb7b5</td></tr>
-<tr>
-<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.getHeaderValueTest()'><b>getHeaderValueTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
-<td></td>
-<td>1</td>
-<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@435fb7b5</td></tr>
-<tr>
-<td title='com.qa.anc.test.RegisteredPW_ViewdetailsTest.getRegisteredPWPageTest()'><b>getRegisteredPWPageTest</b><br>Test class: com.qa.anc.test.RegisteredPW_ViewdetailsTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@435fb7b5</td></tr>
+<td>2</td>
+<td>com.qa.anc.test.RegisteredPW_ViewdetailsTest@47a86fbb</td></tr>
 </table><p>
 </body>
 </html>

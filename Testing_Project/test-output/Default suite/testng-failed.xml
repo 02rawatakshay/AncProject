@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.anc.test.RegisteredPW_ViewdetailsTest">
         <methods>
+          <include name="getRegisteredPWPageTest"/>
           <include name="RegisteredPW_ViewdetailsPageSetup"/>
-          <include name="PWInfoPageTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

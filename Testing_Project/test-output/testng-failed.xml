@@ -22,11 +22,8 @@
         <methods>
           <include name="RegisteredPW_ViewdetailsPageSetup"/>
           <include name="PWInfoPageTest"/>
-          <include name="getHeaderValueTest"/>
-          <include name="getBackButtonTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="DownloadButtonTest"/>
         </methods>
       </class> <!-- com.qa.anc.test.RegisteredPW_ViewdetailsTest -->
     </classes>
